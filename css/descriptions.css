@@ -1,8 +1,8 @@
-.desc-box {
+.descr-box {
   display: flex;
 }
 
-.desc-half {
+.descr-half {
   width: 50%;
 }
 
@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 768px) {
-  .desc-box {
+  .descr-box {
     flex-direction: column;
   }
 }
