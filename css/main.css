@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 10000px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: rgb(12, 108, 252);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  border: none;
+  transition: transform 0.3s;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(51, 132, 254);
+}

@@ -1,0 +1,26 @@
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  text-align: center;
+}
+
+.tagline-container {
+  margin: auto;
+  max-width: 850px;
+  padding: 10px;
+}
+
+.tagline h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .tagline h1 {
+    font-size: 35px;
+  }
+}

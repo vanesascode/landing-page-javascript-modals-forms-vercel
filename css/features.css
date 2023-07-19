@@ -1,0 +1,54 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1400px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.feat {
+  width: 33%;
+  text-align: center;
+  margin: 50px 20px 60px 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*When the viewport width is 768 pixels or less...*/
+@media (max-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .icon-size {
+    font-size: 200px;
+  }
+  .feat {
+    margin: 50px 10px;
+    width: 100%;
+
+    margin-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+.icon-size {
+  font-size: 80px;
+}
+
+.icon-box {
+  min-height: 100px;
+  padding-top: 50px;
+}
+
+.features h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.features p {
+  font-size: 16px;
+}

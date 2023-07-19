@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.navbar > * {
+  width: 50%;
+}
+.navbar .buttons {
+  text-align: right;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 25px;
+}

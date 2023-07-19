@@ -1,0 +1,41 @@
+.form-one {
+  display: flex;
+  justify-content: center;
+}
+
+.form-one input {
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  border: none;
+  width: 70%;
+  margin-right: 10px;
+  border: none;
+}
+
+.form-two-row {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.form-two-row input {
+  width: 50%;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  border: 2px solid rgb(12, 108, 252);
+}
+
+.form-two-row textarea {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(12, 108, 252);
+  margin-bottom: 15px;
+}
+
+.form-two-row-button {
+  margin-bottom: 15px;
+}

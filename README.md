@@ -1,37 +1,77 @@
-<!--hide-->
-# Simple Landing Page
-<!--endhide-->
+# Landing page using Javascript (4geeks acadamey activity)
 
-![Landing page Javascript Preview](https://github.com/breatheco-de/landing-page-javascript/blob/master/preview.gif?raw=true)
+This is a simple landing page selling an invented CSS framework. Ironically, the website is just made with plain CSS. Javascript is used to make modals appear when clicking certain buttons. In fact, when sending your email in the form input (which is sent to FormSubmit.co, an endpoint for Html forms), you have a modal too. Finally, the website is deployed using Vercel.
 
-The best way to learn is by creating real life projects, this is the typical landing page your boss or a startup company owner will like to build.
+Visit the page here: https://business-landing-page-vanesascode.vercel.app
 
-## 🌱  How to start this project
+## Setup
 
-This project comes with the necessary files to start working, but you have two options to start:
+- [x] Createa a app.js, an index.html, and a style.css file.
 
-a) Open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-landing-page-javascript.git
-b) You can clone this repository on your local computer:
-```sh
-$ git clone https://github.com/breatheco-de/exercise-landing-page-javascript.git
+## CSS
+
+- [x] The strategy was identified (see strategy1 & 2 png files in the image folder) - to create the Layout.
+- [x] See how useful is to use display flex, and instead of using justify-content-etc, how nice it is giving a % to each element inside the flex div.
+- [x] `> *` is a css selector that selects all direct child elements of the selected elements.
+- [x] Feel free to create as many CSS files as needed depending on the parts your website has, for having it all organized and being fast to find what you want to change during the development and after production.
+
+## Javascript
+
+Each Javascript file is responsible for a modal in the website:
+
+- The 'formModal' file sets the modal for when you fill in your email in the sign up section and so a form is submitted. All the steps are described in the file.
+
+- The
+
+### Something interesting to know - close() method
+
+The `closeModal` function in the app.js file, was tried to be called just close(). However, it didn't work and didn't close the Modal. This is because it is a method and is commonly used in JavaScript to close a window or a tab.
+
+It's important to note that the close() method can only close windows or tabs that were opened by a script using the open() method. Additionally, some browsers may have restrictions on closing windows or tabs programmatically due to security reasons.
+
+Just fun to know!
+
+## Linking the form to FORMSUBMIT
+
+[FORMSUBMIT](https://formsubmit.co/) is an endpoint for Html forms. It connects your form to their form endpoint and they email you the submissions. No PHP, Javascript or any backend code required. You just need to add this into your form section:
+
 ```
-💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+<form action="https://formsubmit.co/your@email.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+</form>
+```
 
-## 📝 Instructions
+The first time you use it, it will send you an email to activate the form and will give you a random-like string to replace your naked email address in the action attribute of your form
 
-Demonstrate how you can build this beautiful landing page without the need of bootstrap:
+## Deployment
 
-1. Build a landing page [like the one on this image](https://github.com/breatheco-de/landing-page-javascript/blob/master/landing.png?raw=true).
-2. You can find the landing page asset images on the `./img` folder.
-1. Start by building your strategy, [here is an example strategy](https://github.com/breatheco-de/landing-page-javascript/blob/master/strategy.png?raw=true).
-1. Use [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to help you with your layouts.
-2. Reuse your CSS classes, use behavioral class names like `padding-1` or `continainer` instead project related names like `the-dog` or `my_header`.
-3. Make it look exactly like the picture, pixel perfect!
+- [x] Create an account in [Vercel.com](https://vercel.com)
+- [x] Install the Now package, globally: `npm install now -g`
 
-Additional goals (if you feel confident):
+### to create your account
 
-+ Use javascript to capture the user email and send it using [formsubmit.co](https://formsubmit.co/)
+- [x] Run: `now`
+- [x] The terminal will ask you your email.
+- [x] Then, you'll receive an email in which you will have to verify your credentials.
 
-## Technologies
+### to deploy:
 
-HTML5 and CSS and Javascript.
+- [x] Run: `now` again.
+- [x] It will ask you if you want to deploy. You say Y
+- [x] Asks the scope (your name)
+- [x] Asks if you want to link to existing project. You say N
+- [x] In which directory is your code located? If it's in the root folder just leave it like this: `./`
+- [x] Want to override the settings? You say N
+- [x] You can now get the URL that is in the ✅ production line. It's live!
+
+## To add new changes to the live URL
+
+-[x] You run: `now --prod`. Then, changes are saved in the same URL you published before.
+
+The `NOW PACKAGE` is a command-line tool and a cloud deployment platform provided by `Vercel`. It allows developers to easily deploy their applications and static websites to the cloud with just a few simple commands. The "now" package supports various programming languages and frameworks, including JavaScript, Node.js, Python, Ruby, Go, and many more. It provides features like zero-downtime deployments, automatic SSL certificates, and easy scaling options. Overall, the "now" package simplifies the process of deploying and managing web applications and static websites in the cloud.
+
+`Vercel` is a cloud platform for static site hosting and serverless functions. It allows developers to deploy and serve static websites, frontend applications, and serverless functions with ease. Vercel offers features like instant deployment, automatic scaling, global CDN (Content Delivery Network), custom domains, and SSL certificates.
+
+To see a list of globally installed npm packages along with their versions: `npm list -g --depth=0`. The --depth=0 flag ensures that only the top-level packages are displayed without their dependencies.

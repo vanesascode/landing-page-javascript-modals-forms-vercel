@@ -1,0 +1,17 @@
+.desc-box {
+  display: flex;
+}
+
+.desc-half {
+  width: 50%;
+}
+
+.descriptions img {
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .desc-box {
+    flex-direction: column;
+  }
+}
