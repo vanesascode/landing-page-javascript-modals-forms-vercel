@@ -21,8 +21,6 @@ Each Javascript file is responsible for a modal in the website:
 
 - The 'formModal' file sets the modal for when you fill in your email in the sign up section and so a form is submitted. All the steps are described in the file.
 
-- The
-
 ### Something interesting to know - close() method
 
 The `closeModal` function in the app.js file, was tried to be called just close(). However, it didn't work and didn't close the Modal. This is because it is a method and is commonly used in JavaScript to close a window or a tab.
