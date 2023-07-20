@@ -2,16 +2,77 @@
   display: flex;
 }
 
-.descr-half {
-  width: 50%;
+@media (max-width: 900px) {
+  .descr-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .descr-text {
+    padding: 80px;
+  }
+  .computer-pic-down {
+    display: none;
+  }
+
+  .computer-pic-up {
+    display: block;
+  }
 }
 
-.descriptions img {
-  background-size: cover;
+@media (min-width: 900px) {
+  .descr-half {
+    width: 50%;
+  }
+
+  .computer-pic-down {
+    display: block;
+  }
+
+  .computer-pic-up {
+    display: none;
+  }
+}
+
+/*When the viewport width reaches or exceeds 600 pixels, the  .descr-text  class will have a padding of 140 pixels.*/
+@media (min-width: 768px) {
+  .descr-text {
+    padding: 140px;
+  }
+  .descr-text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .descr-text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 768px) {
   .descr-box {
     flex-direction: column;
+    align-items: center;
   }
+  .descr-half {
+    width: 100%;
+  }
+
+  .descr-text h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .descr-text p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.descriptions img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

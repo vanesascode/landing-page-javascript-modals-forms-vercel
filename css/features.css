@@ -1,10 +1,14 @@
+.features-section {
+  background-color: rgb(238, 239, 244);
+}
+
 .features {
   display: flex;
   justify-content: space-between;
   margin: auto;
   max-width: 1400px;
-  margin-bottom: 70px;
-  margin-top: 30px;
+  padding-bottom: 90px;
+  padding-top: 60px;
 }
 
 .feat {
@@ -31,8 +35,8 @@
     width: 100%;
 
     margin-top: 30px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -46,9 +50,10 @@
 }
 
 .features h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 .features p {
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 30px;
 }

@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
   text-align: center;
+  min-height: 700px;
 }
 
 .tagline-container {
@@ -20,6 +20,9 @@
 }
 
 @media (max-width: 768px) {
+  .tagline {
+    min-height: 500px;
+  }
   .tagline h1 {
     font-size: 35px;
   }
