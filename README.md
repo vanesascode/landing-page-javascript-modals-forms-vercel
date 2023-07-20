@@ -72,4 +72,6 @@ The `NOW PACKAGE` is a command-line tool and a cloud deployment platform provide
 
 `Vercel` is a cloud platform for static site hosting and serverless functions. It allows developers to deploy and serve static websites, frontend applications, and serverless functions with ease. Vercel offers features like instant deployment, automatic scaling, global CDN (Content Delivery Network), custom domains, and SSL certificates.
 
+## Need to see versions of your NPM packages?
+
 To see a list of globally installed npm packages along with their versions: `npm list -g --depth=0`. The --depth=0 flag ensures that only the top-level packages are displayed without their dependencies.
