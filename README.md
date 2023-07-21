@@ -6,7 +6,13 @@
 
 - Finally, the website is deployed using Vercel.
 
-### Visit the website here: https://business-landing-page-vanesascode.vercel.app
+***
+
+### 👉 [Click here](https://business-landing-page-vanesascode.vercel.app) to visit the website. 
+***
+
+
+![Captura1](https://github.com/vanesascode/landing-page-javascript-modals-forms-vercel/assets/131259155/79da597e-4169-4c72-aa7c-ef9c37ea737a)
 
 ## Setup
 
