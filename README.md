@@ -1,4 +1,4 @@
-# Landing page using Javascript (4geeks acadamey activity)
+# Landing page using Javascript (4geeks academy activity)
 
 - This is a simple landing page selling an invented CSS framework. Ironically, the website is just made with plain CSS. However, it is made as responsive as possible using the `media queries`.
 
@@ -22,6 +22,8 @@
 ## Javascript
 
 Each Javascript file is responsible for a modal in the website. You'll find many notes in them showing you the steps followed to open and close modals.
+
+It's fun to know, that sometimes the Javascript rules worked because of a silly change of words changing, or a Capital letter, avoiding slash notation, etc. Great training with that!
 
 ### Something interesting to know - close() method
 

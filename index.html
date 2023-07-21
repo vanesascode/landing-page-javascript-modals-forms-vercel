@@ -22,12 +22,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--Fontawesom-->
+    <!--Fontawesome-->
     <script
       src="https://kit.fontawesome.com/b3cb0b9144.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <!--Favicon ico-->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <title>AquaGrid 6</title>
   </head>
 
   <body>
@@ -36,7 +38,7 @@
       <section class="navbar">
         <div class="brand">AquaGrid 6</div>
         <div class="buttons">
-          <button id="contactButtonOne">Contact Us</button>
+          <button id="contact-button-one">Contact Us</button>
         </div>
       </section>
       <!--TAGLINE-->
@@ -247,25 +249,40 @@
         <div class="footer-box">
           <div class="footer-text">
             <div class="footer-text-links">
-              <a id="aboutModal">About</a>
-              <a id="contactButtonTwo">Contact us</a>
-              <a id="TermsModal">Terms of Use</a>
-              <a id="PolicyModal">Privacy Policy</a>
+              <a id="about-modal-button">About</a>
+              <a id="contact-button-two">Contact us</a>
+              <a id="TermsModal" href="#">Terms of Use</a>
+              <a id="PolicyModal" href="#">Privacy Policy</a>
             </div>
             <div class="footer-text-credits">
               <p>
                 By
                 <a href="https://github.com/vanesascode" target="_blank"
-                  >vanesascode.</a
+                  ><b class="signature">vanesascode</b></a
                 >
                 All rights reserved &copy; 2023
               </p>
             </div>
           </div>
           <div class="social-media-links">
-            <img src="./img/twitter.png" alt="twitter logo" />
-            <img src="./img/facebook.png" alt="facebook logo" />
-            <img src="./img/twitter.png" alt="twitter logo" />
+            <a href="https://twitter.com/" target="_blank"
+              ><img
+                src="./img/twitter.png"
+                alt="twitter logo"
+                class="social-media-icon"
+            /></a>
+            <a href="https://facebook.com/" target="_blank"
+              ><img
+                src="./img/facebook.png"
+                alt="facebook logo"
+                class="social-media-icon"
+            /></a>
+            <a href="https://instagram.com/" target="_blank"
+              ><img
+                src="./img/instagram.png"
+                alt="twitter logo"
+                class="social-media-icon"
+            /></a>
           </div>
         </div>
       </section>
@@ -364,14 +381,28 @@
     <div class="email-form-modal" id="thanks-modal-one">
       <h3>Thank you!</h3>
       <p>You'll receive an email from us very soon.</p>
-      <button onClick="closeContactModalOne()">Close</button>
+      <button onClick="closeContactThanksModalOne()">Close</button>
     </div>
 
     <!--Thanks Form Modal Two-->
     <div class="email-form-modal" id="thanks-modal-two">
       <h3>Thank you!</h3>
       <p>You'll receive an email from us very soon.</p>
-      <button onClick="closeContactModalTwo()">Close</button>
+      <button onClick="closeContactThanksModalTwo()">Close</button>
+    </div>
+
+    <!--About Modal-->
+    <div class="about-modal" id="about-modal-container">
+      <h3>AquaGrid</h3>
+      <p>
+        Designed and built with all the love in the world by the AquaGrid team
+        with the help of our contributors.
+      </p>
+      <p>Code licensed TIM, docs AA BY 7.0.</p>
+      <p>Currently v6.0.1.</p>
+      <p>Analytics by Chusta.</p>
+
+      <button onClick="closeAboutModal()">Close</button>
     </div>
 
     <!--JAVASCRIPT-->
@@ -379,5 +410,6 @@
     <script src="./js/emailModalTwo.js"></script>
     <script src="./js/contactModalOne.js"></script>
     <script src="./js/contactModalTwo.js"></script>
+    <script src="./js/aboutModal.js"></script>
   </body>
 </html>

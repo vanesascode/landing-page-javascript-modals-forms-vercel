@@ -1,11 +1,11 @@
 
 //*************************FORM*************************//
 
-//STEP 1: select the form, and the modal with JS. Since we are getting the modal by the css tag, we need to specify too that we want all the elements all inside the modal too: 
+//STEP 1: select the form, and the modal with JS.  
 
 let formTwo = document.getElementById('form-email-two');
 let modalTwo = document.getElementById('email-form-modal-two');
-// let modalElements = modal.querySelectorAll('*');
+
 
 //STEP 2: Attach the function 'send' to the form submit event. This means that when the form is submitted, the "send" function will be executed. 
 //The code is not written as  'form.onsubmit = send();'  because that would immediately invoke the  send  function and assign its return value to the onsubmit event.  
