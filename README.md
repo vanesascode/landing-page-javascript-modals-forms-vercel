@@ -14,18 +14,18 @@
 
 ![Captura1](https://github.com/vanesascode/landing-page-javascript-modals-forms-vercel/assets/131259155/79da597e-4169-4c72-aa7c-ef9c37ea737a)
 
-## Setup
+## 🔹 Setup
 
 - [x] Createa a app.js, an index.html, and a style.css file.
 
-## CSS
+## 🔹 CSS
 
 - [x] The strategy was identified (see strategy1 & 2 png files in the image folder) - to create the Layout.
 - [x] See how useful is to use display flex, and instead of using justify-content-etc, how nice it is giving a % to each element inside the flex div.
 - [x] `> *` is a css selector that selects all direct child elements of the selected elements.
 - [x] Feel free to create as many CSS files as needed depending on the parts your website has, for having it all organized and being fast to find what you want to change during the development and after production.
 
-## Javascript
+## 🔹 Javascript
 
 Each Javascript file is responsible for a modal in the website. You'll find many notes in them showing you the steps followed to open and close modals.
 
@@ -39,7 +39,7 @@ It's important to note that the close() method can only close windows or tabs th
 
 Just fun to know!
 
-## Linking the form to FORMSUBMIT
+## 🔹 Linking the form to FORMSUBMIT
 
 [FORMSUBMIT](https://formsubmit.co/) is an endpoint for Html forms. It connects your form to their form endpoint and they email you the submissions. No PHP, Javascript or any backend code required. You just need to add this into your form section:
 
@@ -53,7 +53,7 @@ Just fun to know!
 
 The first time you use it, it will send you an email to activate the form and will give you a random-like string to replace your naked email address in the action attribute of your form.
 
-## Deployment
+## 🔹 Deployment
 
 - [x] Create an account in [Vercel.com](https://vercel.com)
 - [x] Install the Now package in the terminal, globally: `npm install now -g`
@@ -74,7 +74,7 @@ The first time you use it, it will send you an email to activate the form and wi
 - [x] You want to override the settings? You say N
 - [x] You can now get the URL that is in the ✅ production line. It's live!
 
-## To add new changes to the live URL
+## 🔹 To add new changes to the live URL
 
 -[x] You run: `now --prod`. Then, changes are saved in the same URL you published before.
 
@@ -82,6 +82,6 @@ The `NOW PACKAGE` is a command-line tool and a cloud deployment platform provide
 
 `Vercel` is a cloud platform for static site hosting and serverless functions. It allows developers to deploy and serve static websites, frontend applications, and serverless functions with ease. Vercel offers features like instant deployment, automatic scaling, global CDN (Content Delivery Network), custom domains, and SSL certificates.
 
-## Need to see versions of your NPM packages?
+## 🔹 Need to see versions of your NPM packages?
 
 To see a list of globally installed npm packages along with their versions: `npm list -g --depth=0`. The --depth=0 flag ensures that only the top-level packages are displayed without their dependencies.
