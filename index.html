@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./css/features.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/tagline.css" />
+    <link rel="stylesheet" href="./css/tagline-2.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/descriptions.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/modals.css" />
     <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/testimonials.css" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,8 +50,12 @@
         "
       >
         <div class="tagline-container">
-          <h1>
-            Build a landing page for your business and generate more leads
+          <h1 class="tagline-title-big">
+            Build a landing page for your business or project and generate more
+            leads
+          </h1>
+          <h1 class="tagline-title-small">
+            Build a business landing page and generate more leads
           </h1>
 
           <form
@@ -164,8 +170,103 @@
         </div>
       </section>
 
+      <!--TESTIMONIALS-->
+      <section class="testimonials-section">
+        <h2>What our clients are saying</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img src="./img/testimonial-1.jpg" alt="testimonial" />
+            <h3>Sarah P.</h3>
+            <p>
+              "Aquagrid's well-organized and customizable grid system empowers
+              developers to create stunning web layouts in no time."
+            </p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="./img/testimonial-2.jpg"
+              alt="testimonial"
+              class="testimonial-2"
+            />
+            <h3>Rachel L.</h3>
+            <p>
+              "With Aquagrid, creating responsive and visually appealing web
+              layouts becomes a breeze."
+            </p>
+          </div>
+          <div class="testimonial">
+            <img src="./img/testimonial-3.jpg" alt="testimonial" />
+            <h3>Tom D.</h3>
+            <p>
+              "Aquagrid simplifies the process of building complex grid-based
+              designs, making it a valuable tool for front-end developers."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--TAGLINE-2-->
+      <section
+        class="tagline-2"
+        style="
+          background-image: url('./img/bg-masthead.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center bottom;
+        "
+      >
+        <div class="tagline-2-container">
+          <h2 class="tagline-2-title-big">
+            Ready to get started? Sign up now!
+          </h2>
+          <h2 class="tagline-2-title-small">
+            Ready to get started? <br />Sign up now!
+          </h2>
+
+          <form
+            class="form-one"
+            target="_blank"
+            action="https://formsubmit.co/62c7fe23597adc647ec30f1b4213e53f"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address..."
+              required
+            />
+
+            <button type="submit">Sign up</button>
+          </form>
+        </div>
+      </section>
       <!--FOOTER-->
-      <section class="footer">Footer</section>
+      <section class="footer">
+        <div class="footer-box">
+          <div class="footer-text">
+            <div class="footer-text-links">
+              <a id="aboutModal">About</a>
+              <a id="contactModalLink">Contact us</a>
+              <a id="TermsModal">Terms of Use</a>
+              <a id="PolicyModal">Privacy Policy</a>
+            </div>
+            <div class="footer-text-credits">
+              <p>
+                By
+                <a href="https://github.com/vanesascode" target="_blank"
+                  >vanesascode.</a
+                >
+                All rights reserved &copy; 2023
+              </p>
+            </div>
+          </div>
+          <div class="social-media-links">
+            <img src="./img/twitter.png" alt="twitter logo" />
+            <img src="./img/facebook.png" alt="facebook logo" />
+            <img src="./img/twitter.png" alt="twitter logo" />
+          </div>
+        </div>
+      </section>
     </div>
     <p></p>
 
@@ -178,7 +279,7 @@
       <button onClick="closeModal()">Close</button>
     </div>
 
-    <!--Contact Modal-->
+    <!--Contact Modal 1-->
     <div class="modal-two" id="contactModalContainer">
       <h3>We'll contact you as soon as possible</h3>
       <form
@@ -211,8 +312,42 @@
       <button onClick="closeModalTwo()">Cancel</button>
     </div>
 
+    <!--Contact Modal 3-->
+    <div class="modal-three" id="contactModalContainerThree">
+      <h3>We'll contact you as soon as possible</h3>
+      <form
+        class="form-three"
+        target="_blank"
+        action="https://formsubmit.co/62c7fe23597adc647ec30f1b4213e53f"
+        method="POST"
+      >
+        <div class="form-three-row">
+          <input type="text" name="name" placeholder="Full Name" required />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="form-three-row">
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="form-three-row-button">Submit Form</button>
+      </form>
+
+      <button onClick="closeModalThree()">Cancel</button>
+    </div>
+
     <!--JAVASCRIPT-->
-    <script src="./formModal.js"></script>
-    <script src="./contactModal.js"></script>
+    <script src="./js/formModal.js"></script>
+    <script src="./js/contactModal.js"></script>
+    <script src="./js/contactModalThree.js"></script>
   </body>
 </html>

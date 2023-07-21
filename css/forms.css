@@ -1,6 +1,21 @@
+/*form 1 */
+
 .form-one {
   display: flex;
   justify-content: center;
+}
+
+.form-one ::placeholder {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-one input {
+    padding: 20px 10px 15px 10px;
+    border-radius: 3px;
+    border: none;
+    width: 70%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -11,23 +26,21 @@
   }
 
   .form-one input {
+    padding: 10px 10px 5px 10px;
+    border-radius: 3px;
+    border: none;
     height: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    width: 90%;
   }
 
   .form-one button {
     height: 40px;
+    font-size: 20px;
   }
 }
 
-.form-one input {
-  padding: 5px 10px 5px 10px;
-  border-radius: 3px;
-  border: none;
-  width: 70%;
-  margin-right: 10px;
-  border: none;
-}
+/*form 2*/
 
 .form-two-row {
   display: flex;
@@ -54,5 +67,35 @@
 }
 
 .form-two-row-button {
+  margin-bottom: 15px;
+}
+
+/*form 3*/
+
+.form-three-row {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.form-three-row input {
+  width: 50%;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  border: 2px solid rgb(12, 108, 252);
+}
+
+.form-three-row textarea {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(12, 108, 252);
+  margin-bottom: 15px;
+}
+
+.form-three-row-button {
   margin-bottom: 15px;
 }
