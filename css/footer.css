@@ -32,7 +32,7 @@
 .footer-text-links a {
   display: flex;
   margin-right: 70px;
-  font-size: 25px;
+  font-size: 16px;
   color: rgb(12, 108, 252);
 }
 
@@ -72,7 +72,7 @@
 }
 
 .footer-text-credits {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .footer-text-credits a {

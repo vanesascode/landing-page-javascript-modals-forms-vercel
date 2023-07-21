@@ -1,11 +1,11 @@
 
 //*************************FORM*************************//
 
-//STEP 1: select the form, and the modal with JS. Since we are getting the modal by the css tag, we need to specify too that we want all the elements all inside the modal too: 
+//STEP 1: select the form, and the modal with JS.  
 
-let form = document.querySelector('form');
-let modal = document.querySelector('.modal');
-let modalElements = modal.querySelectorAll('*');
+let form = document.getElementById('form-email-one');
+let modal = document.getElementById('email-form-modal-one');
+
 
 //STEP 2: Attach the function 'send' to the form submit event. This means that when the form is submitted, the "send" function will be executed. 
 //The code is not written as  'form.onsubmit = send();'  because that would immediately invoke the  send  function and assign its return value to the onsubmit event.  
@@ -41,5 +41,6 @@ function closeModal() {
 function callThankyouMessage() {
   form.innerHTML = "Thank you! We'll contact you soon!"
   form.style.fontWeight = "bold";
+  form.style.fontSize = "25px";
 }
 

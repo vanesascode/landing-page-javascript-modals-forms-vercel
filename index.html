@@ -36,7 +36,7 @@
       <section class="navbar">
         <div class="brand">AquaGrid 6</div>
         <div class="buttons">
-          <button id="contactModalButton">Contact Us</button>
+          <button id="contactButtonOne">Contact Us</button>
         </div>
       </section>
       <!--TAGLINE-->
@@ -59,7 +59,8 @@
           </h1>
 
           <form
-            class="form-one"
+            id="form-email-one"
+            class="form-email"
             target="_blank"
             action="https://formsubmit.co/62c7fe23597adc647ec30f1b4213e53f"
             method="POST"
@@ -172,7 +173,7 @@
 
       <!--TESTIMONIALS-->
       <section class="testimonials-section">
-        <h2>What our clients are saying</h2>
+        <h2>What our clients are saying:</h2>
         <div class="testimonials">
           <div class="testimonial">
             <img src="./img/testimonial-1.jpg" alt="testimonial" />
@@ -224,7 +225,8 @@
           </h2>
 
           <form
-            class="form-one"
+            id="form-email-two"
+            class="form-email"
             target="_blank"
             action="https://formsubmit.co/62c7fe23597adc647ec30f1b4213e53f"
             method="POST"
@@ -246,7 +248,7 @@
           <div class="footer-text">
             <div class="footer-text-links">
               <a id="aboutModal">About</a>
-              <a id="contactModalLink">Contact us</a>
+              <a id="contactButtonTwo">Contact us</a>
               <a id="TermsModal">Terms of Use</a>
               <a id="PolicyModal">Privacy Policy</a>
             </div>
@@ -272,56 +274,31 @@
 
     <!--MODALS-->
 
-    <!--Form Modal-->
-    <div class="modal">
+    <!--Email Form Modal One-->
+    <div class="email-form-modal" id="email-form-modal-one">
       <h3>Thank you!</h3>
       <p>Your email has been successfully sent.</p>
       <button onClick="closeModal()">Close</button>
     </div>
 
-    <!--Contact Modal 1-->
-    <div class="modal-two" id="contactModalContainer">
-      <h3>We'll contact you as soon as possible</h3>
-      <form
-        class="form-two"
-        target="_blank"
-        action="https://formsubmit.co/62c7fe23597adc647ec30f1b4213e53f"
-        method="POST"
-      >
-        <div class="form-two-row">
-          <input type="text" name="name" placeholder="Full Name" required />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-        </div>
-        <div class="form-two-row">
-          <textarea
-            placeholder="Your Message"
-            name="message"
-            rows="10"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" class="form-two-row-button">Submit Form</button>
-      </form>
-
-      <button onClick="closeModalTwo()">Cancel</button>
+    <!--Email Form Modal Two-->
+    <div class="email-form-modal" id="email-form-modal-two">
+      <h3>Thank you!</h3>
+      <p>Your email has been successfully sent.</p>
+      <button onClick="closeModalTwo()">Close</button>
     </div>
 
-    <!--Contact Modal 3-->
-    <div class="modal-three" id="contactModalContainerThree">
+    <!--Contact Modal One-->
+    <div class="contact-form-modal" id="contactModalContainerOne">
       <h3>We'll contact you as soon as possible</h3>
       <form
-        class="form-three"
+        id="form-contact-one"
+        class="form-contact"
         target="_blank"
         action="https://formsubmit.co/62c7fe23597adc647ec30f1b4213e53f"
         method="POST"
       >
-        <div class="form-three-row">
+        <div class="form-contact-row">
           <input type="text" name="name" placeholder="Full Name" required />
 
           <input
@@ -331,7 +308,7 @@
             required
           />
         </div>
-        <div class="form-three-row">
+        <div class="form-contact-row">
           <textarea
             placeholder="Your Message"
             name="message"
@@ -339,15 +316,68 @@
             required
           ></textarea>
         </div>
-        <button type="submit" class="form-three-row-button">Submit Form</button>
+        <button type="submit" class="form-contact-row-button">
+          Submit Form
+        </button>
       </form>
 
-      <button onClick="closeModalThree()">Cancel</button>
+      <button onClick="closeContactModalOne()">Cancel</button>
+    </div>
+
+    <!--Contact Modal Two-->
+    <div class="contact-form-modal" id="contactModalContainerTwo">
+      <h3>We'll contact you as soon as possible</h3>
+      <form
+        id="form-contact-two"
+        class="form-contact"
+        target="_blank"
+        action="https://formsubmit.co/62c7fe23597adc647ec30f1b4213e53f"
+        method="POST"
+      >
+        <div class="form-contact-row">
+          <input type="text" name="name" placeholder="Full Name" required />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="form-contact-row">
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="form-contact-row-button">
+          Submit Form
+        </button>
+      </form>
+
+      <button onClick="closeContactModalTwo()">Cancel</button>
+    </div>
+
+    <!--Thanks Form Modal One-->
+    <div class="email-form-modal" id="thanks-modal-one">
+      <h3>Thank you!</h3>
+      <p>You'll receive an email from us very soon.</p>
+      <button onClick="closeContactModalOne()">Close</button>
+    </div>
+
+    <!--Thanks Form Modal Two-->
+    <div class="email-form-modal" id="thanks-modal-two">
+      <h3>Thank you!</h3>
+      <p>You'll receive an email from us very soon.</p>
+      <button onClick="closeContactModalTwo()">Close</button>
     </div>
 
     <!--JAVASCRIPT-->
-    <script src="./js/formModal.js"></script>
-    <script src="./js/contactModal.js"></script>
-    <script src="./js/contactModalThree.js"></script>
+    <script src="./js/emailModalOne.js"></script>
+    <script src="./js/emailModalTwo.js"></script>
+    <script src="./js/contactModalOne.js"></script>
+    <script src="./js/contactModalTwo.js"></script>
   </body>
 </html>

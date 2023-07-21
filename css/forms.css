@@ -1,17 +1,17 @@
-/*form 1 */
+/*form email */
 
-.form-one {
+.form-email {
   display: flex;
   justify-content: center;
 }
 
-.form-one ::placeholder {
-  font-size: 20px;
+.form-email ::placeholder {
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
-  .form-one input {
-    padding: 20px 10px 15px 10px;
+  .form-email input {
+    padding: 20px 10px 20px 10px;
     border-radius: 3px;
     border: none;
     width: 70%;
@@ -19,14 +19,14 @@
 }
 
 @media (max-width: 768px) {
-  .form-one {
+  .form-email {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .form-one input {
-    padding: 10px 10px 5px 10px;
+  .form-email input {
+    padding: 10px 10px 10px 10px;
     border-radius: 3px;
     border: none;
     height: 40px;
@@ -34,21 +34,21 @@
     width: 90%;
   }
 
-  .form-one button {
+  /* .form-one button {
     height: 40px;
     font-size: 20px;
-  }
+  } */
 }
 
-/*form 2*/
+/*form contact*/
 
-.form-two-row {
+.form-contact-row {
   display: flex;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.form-two-row input {
+.form-contact-row input {
   width: 50%;
   padding: 10px;
   margin-left: 5px;
@@ -57,7 +57,7 @@
   border: 2px solid rgb(12, 108, 252);
 }
 
-.form-two-row textarea {
+.form-contact-row textarea {
   margin-left: 5px;
   margin-right: 5px;
   width: 100%;
@@ -66,11 +66,11 @@
   margin-bottom: 15px;
 }
 
-.form-two-row-button {
+.form-contact-row-button {
   margin-bottom: 15px;
 }
 
-/*form 3*/
+/* form 3
 
 .form-three-row {
   display: flex;
@@ -98,4 +98,4 @@
 
 .form-three-row-button {
   margin-bottom: 15px;
-}
+} */

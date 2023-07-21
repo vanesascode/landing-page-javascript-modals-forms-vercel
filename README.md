@@ -1,8 +1,12 @@
 # Landing page using Javascript (4geeks acadamey activity)
 
-This is a simple landing page selling an invented CSS framework. Ironically, the website is just made with plain CSS. Javascript is used to make modals appear when clicking certain buttons. In fact, when sending your email in the form input (which is sent to FormSubmit.co, an endpoint for Html forms), you have a modal too. Finally, the website is deployed using Vercel.
+- This is a simple landing page selling an invented CSS framework. Ironically, the website is just made with plain CSS. However, it is made as responsive as possible using the `media queries`.
 
-Visit the page here: https://business-landing-page-vanesascode.vercel.app
+- Javascript is used to make modals appear when clicking certain buttons or sending forms. For example, when sending your email in the intro tagline input or the one at the end of the web (which is sent to `FormSubmit.co`, that is an endpoint for Html forms), you have a modal thanking you. Or when you click on 'Contact us' it opens a contact form modal and when submiting it it opens another modal.
+
+- Finally, the website is deployed using Vercel.
+
+### Visit the website here: https://business-landing-page-vanesascode.vercel.app
 
 ## Setup
 
@@ -17,13 +21,11 @@ Visit the page here: https://business-landing-page-vanesascode.vercel.app
 
 ## Javascript
 
-Each Javascript file is responsible for a modal in the website:
-
-- The 'formModal' file sets the modal for when you fill in your email in the sign up section and so a form is submitted. All the steps are described in the file.
+Each Javascript file is responsible for a modal in the website. You'll find many notes in them showing you the steps followed to open and close modals.
 
 ### Something interesting to know - close() method
 
-The `closeModal` function in the app.js file, was tried to be called just close(). However, it didn't work and didn't close the Modal. This is because it is a method and is commonly used in JavaScript to close a window or a tab.
+The 'closeModal' function in the app.js file, was tried to be called just close() when starting this up. However, it didn't work and didn't close the Modal it had to close. This is because `close` is a method and is commonly used in JavaScript to close a window or a tab.
 
 It's important to note that the close() method can only close windows or tabs that were opened by a script using the open() method. Additionally, some browsers may have restrictions on closing windows or tabs programmatically due to security reasons.
 
@@ -41,12 +43,12 @@ Just fun to know!
 </form>
 ```
 
-The first time you use it, it will send you an email to activate the form and will give you a random-like string to replace your naked email address in the action attribute of your form
+The first time you use it, it will send you an email to activate the form and will give you a random-like string to replace your naked email address in the action attribute of your form.
 
 ## Deployment
 
 - [x] Create an account in [Vercel.com](https://vercel.com)
-- [x] Install the Now package, globally: `npm install now -g`
+- [x] Install the Now package in the terminal, globally: `npm install now -g`
 
 ### to create your account
 
@@ -61,7 +63,7 @@ The first time you use it, it will send you an email to activate the form and wi
 - [x] Asks the scope (your name)
 - [x] Asks if you want to link to existing project. You say N
 - [x] In which directory is your code located? If it's in the root folder just leave it like this: `./`
-- [x] Want to override the settings? You say N
+- [x] You want to override the settings? You say N
 - [x] You can now get the URL that is in the ✅ production line. It's live!
 
 ## To add new changes to the live URL
