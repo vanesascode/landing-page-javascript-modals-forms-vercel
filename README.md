@@ -16,7 +16,7 @@
 
 ## 🔹 Setup
 
-- [x] Createa a app.js, an index.html, and a style.css file.
+- [x] Create an app.js, an index.html, and a style.css file.
 
 ## 🔹 CSS
 
@@ -58,13 +58,13 @@ The first time you use it, it will send you an email to activate the form and wi
 - [x] Create an account in [Vercel.com](https://vercel.com)
 - [x] Install the Now package in the terminal, globally: `npm install now -g`
 
-### to create your account
+### To sign in into the project:
 
 - [x] Run: `now`
 - [x] The terminal will ask you your email.
 - [x] Then, you'll receive an email in which you will have to verify your credentials.
 
-### to deploy:
+### To deploy:
 
 - [x] Run: `now` again.
 - [x] It will ask you if you want to deploy. You say Y
@@ -76,7 +76,7 @@ The first time you use it, it will send you an email to activate the form and wi
 
 ## 🔹 To add new changes to the live URL
 
--[x] You run: `now --prod`. Then, changes are saved in the same URL you published before.
+- [x] You run: `now --prod`. Then, changes are saved in the same URL you published before.
 
 The `NOW PACKAGE` is a command-line tool and a cloud deployment platform provided by `Vercel`. It allows developers to easily deploy their applications and static websites to the cloud with just a few simple commands. The "now" package supports various programming languages and frameworks, including JavaScript, Node.js, Python, Ruby, Go, and many more. It provides features like zero-downtime deployments, automatic SSL certificates, and easy scaling options. Overall, the "now" package simplifies the process of deploying and managing web applications and static websites in the cloud.
 
